@@ -31,5 +31,5 @@ test('clicking - decrements the count', () => {
   // Complete the unit test below based on the objective in the line above
   fireEvent.click(screen.getByRole('button', { name: '-' }));
   const count = screen.getByTestId('count');
-  expect(count).toHaveTextContent(1);
+  expect(count).toHaveTextContent(-1);
 });
